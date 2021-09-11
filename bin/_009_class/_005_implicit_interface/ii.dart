@@ -7,12 +7,14 @@ abstract class ABSPerson {
 }
 
 class Person implements ABSPerson {
+  @override
   String name;
 
   Person(this.name);
 
+  @override
   String getName() {
-    return this.name;
+    return name;
   }
 }
 
